@@ -29,6 +29,10 @@ public class Cat {
 		// Draw the head
 		g2.setColor(Color.yellow);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
+		// Draw the ears
+		g2.setColor(Color.yellow);
+		g2.fillOval(catX, catY-10, x/2, y);
+		g2.fillOval(catX+70, catY-10, x/2, y);
 		// Draw the eyes
 		g2.setColor(Color.pink);
 		x = catX + EYE_X; 
@@ -41,11 +45,12 @@ public class Cat {
 		x = catX + MOUTH_X;
 		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
-		g2.setColor(Color.black);
+		// Making text pink because pink
+		g2.setColor(Color.PINK);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
 		g2.drawString("Meow", catX, catY+HEAD_DIMENSION+10);	
 		g2.drawString("PIINK FFFLLUFFY UNICORNS DANCIN' ON RAINBOWS.", catX, catY+HEAD_DIMENSION+30);	
-
+		
 	}
 }
