@@ -50,6 +50,11 @@ public class Cat {
 		g3.setColor(Color.yellow);
 		g3.fillOval(catX, catY-10, x/2, y);
 		g3.fillOval(catX+70, catY-10, x/2, y);
+		// Draw cherry and toppings for cat head
+		g2.setColor(Color.RED);
+		g2.fillOval(catX + 40,catY - 5, 15, 15);
+		g2.setColor(Color.MAGENTA);
+		g2.drawString("',,''', ',, '' ,' '' '", catX + 5, catY + 20);
 		// Draw the eyes
 		g3.setColor(Color.pink);
 		x = catX + EYE_X; 
@@ -66,8 +71,8 @@ public class Cat {
 		g3.setColor(Color.PINK);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
-		g3.drawString("Meow", catX, catY+HEAD_DIMENSION+10);	
-		g3.drawString("PIINK FFFLLUFFY UNICORNS DANCIN' ON RAINBOWS.", catX, catY+HEAD_DIMENSION+30);	
+		g3.drawString("Meow", catX, catY+HEAD_DIMENSION+50);	
+		g3.drawString("PIINK FFFLLUFFY UNICORNS DANCIN' ON RAINBOWS.", catX, catY+HEAD_DIMENSION+80);	
 		
 	}
 }
